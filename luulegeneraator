@@ -1,0 +1,114 @@
+import random as rnd
+
+def password ():
+    a = rnd.randrange (20)
+    b = rnd.randrange(20)
+    d=a+b
+    f=float(d)
+    print("Et saaksid edasi mängida, vasta tehtele õigesti")
+    print(a, "+",b)
+    c=input("mis on vastus? ")
+    print("kontroll:",d)
+    g=float(c)
+    if f == g:
+        print("palju õnne, saad edasi mängida")
+    else:
+        print(" proovi uuesti, sul on vaid üks võimalus alles")
+        e=input("mis on vastus?")
+        h=float(e)
+        
+        if h == f:
+            print("palju õnne, saad edasi mängida")
+        else:
+            print("kahjuks pead mängu/testi? uuesti alustama")
+            mäng()
+def mäng ():
+    print("Tervist, olete jõudnud perfektse luuletuse salongi. Küsime teilt paar küsimust, et jõuda teie ihaldatud riimideni. Alustame teemaga, tehke oma valik A) jõululuuletus B) armastus C) aastaajad")
+
+    n=input("A/B/C? ")
+    if n == "A":
+        print("Oled valinud jõululuule.")
+        password()
+        print("Nüüd räägi mulle, millest sa soovid, et see kõneleks? A) jõulupuu B) jõuluootus C) rõõmud")
+        i=input("A/B/C? ")
+        if i == "A":
+            print("ning viimase asjana, kas sa soovid A) pikka või B) lühikest luuletust?")
+            j=input("A/B? ")
+            if j == "A":
+                print ("Oled valinud pika jõulupuuteemalise jõululuuletuse. Siit see tuleb.")
+                print("Ühel väiksel Eesti linnal, hakkas kuusest hale. Metsa nad ei tahtnud minna, raiumine vale! Nii neil tekkis mõte hea, sätiks pilpad kuuseks. Keset linna selle seaks, aseaineks puule. Mõeldi, loodi - teos sai püsti, rohelised lambid üll. Rahva hulgas tehti testi, tuli välja - meeldis küll. ")
+            if j == "B":
+                print ("Oled valinud lühikese jõulupuuteemalise jõululuuletuse. Siit see tuleb!   Meie armas kuusepuu, pole mingi ahjupuu, keset tuba ilutseb, jõulukell siin heliseb")
+        if i == "B":
+            print("Oled valinud jõuluootuse. Kas sa soovid A) pikka või B) lühikest luuletust? ")
+            j=input("A/B? ")
+            if j == "A":
+                print ("Oled valinud pika jõuluootuse luuletuse. Siit ta tuleb!")
+                print("Magus piparkoogilõhn, tuleb meie köögist, piparkooke teeme me, täna õhtusöögiks!, Munavalge kreemigakaunistame kooke, silmad, kõrvad, nina suu -kõikvõimalikud looked! Sinist toiduvärvi me, silmadesse lisame, piparkook missugune, tuleb jõululauale!")
+            if j == "B":
+                print ("Oled valinud lühikese jõuluootuse luuletuse. Siit ta tuleb!")
+                print("Päkapikk ma ootan sind,  ootust täis on kogu hing,  aknalaual seisab king,  aastal peagi täis saab ring")
+        if i == "C":
+            print("Oled valinud jõulurõõmud. Nüüd kas sa soovid A) pikka või B) lühikest luuletust?")
+            j=input("A/B? ")
+            if j == "A":
+                print ("Oled valinud pika jõulurõõmude luuletuse. Siit ta tuleb!")
+                print("Jõulurõõm on talveajas,  kodurahus hubases.  Ootab lapse kodumajas,  kõigis nendes tubades.  Jõulurõõm on sinu andes  nagu särav päiksekiir.  Seda annet endas kandes  selgemaks saab silmapiir.  Jõulurõõm on sama vana,  kui sa teda tundma said.  Esimene jõuluvana:  tema esimene pai.")
+            if j == "B":
+                print ("Oled valinud lühikese jõulurõõmu luuletuse, Siit ta tuleb!")
+                print("Valge maa see võimust võtab,  imeliselt meile tõttab,  Kaasas rahu, õnn ja rõõm,  alata võib Jõulurõõm.")
+    if n == "B":
+        print(".")
+        password()
+        print(".")
+        i=input("A/B/C? ")
+        if i == "A":
+            print(".")
+            j=input("A/B? ")
+            if j == "A":
+                print (".")
+            if j == "B":
+                print (".")    
+        if i == "B":
+            print(".")
+            j=input("A/B? ")
+            if j == "A":
+                print (".")
+            if j == "B":
+                print (".") 
+            j=input("A/B? ")
+        if i == "C":
+            print(".")
+            j=input("A/B? ")
+            if j == "A":
+                print (".")
+            if j == "B":
+                print (".")
+    if n == "C":
+        print(".")
+        password()
+        print(".")
+        i=input("A/B/C? ")
+        if i == "A":
+            print(".")
+            j=input("A/B? ")
+            if j == "A":
+                print (".")
+            if j == "B":
+                print (".")    
+        if i == "B":
+            print(".")
+            j=input("A/B? ")
+            if j == "A":
+                print (".")
+            if j == "B":
+                print (".") 
+            j=input("A/B? ")
+        if i == "C":
+            print(".")
+            j=input("A/B? ")
+            if j == "A":
+                print (".")
+            if j == "B":
+                print (".")
+mäng()
