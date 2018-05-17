@@ -20,12 +20,13 @@ def poomismäng ():
 
     def uusmäng():
         print("Sinu vigade arv on", x)
-        vastus=input("Kas te soovite uuesti mängida? (vasta jah või ei)"  )
+        vastus=input("Kas te soovite uuesti mängida? (vasta jah või ei) "  )
         if vastus == "jah":
             turtle.resetscreen()
             poomismäng()
         if vastus == "ei":
-            print("Väga kahju on näha teid minemas. Aitäh meiega mängimast")
+            print("Väga kahju on näha teid minemas. Aitäh meiega mängimast. ")
+            exit()
         else:
             print("Kahjuks ei mõista me teie vastust. Olge kindel, et kirjutate väikeste tähtedega ja tühikuteta. Vastake kas jah või ei")
             uusmäng()
@@ -126,7 +127,7 @@ def poomismäng ():
             x=x+1
 
 #strike4
-    neljas = input("Teie neljas pakkumine, palun. Ragistage ajusid, sest tagumiku alt läheb juba kuumaks!  ")
+    neljas = input("Teie neljas pakkumine, palun. Ragistage ajusid, sest olukord on juba hapu!  ")
     if neljas == sõna:
           print (sõna)
           print("Väga hea tulemus, lilleke, see oli õige vastus!")
